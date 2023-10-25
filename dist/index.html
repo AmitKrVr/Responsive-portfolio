@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Fully Responsive Website</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- bootstrap form validation -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-slate-900">
+  <!-- Navbar -->
+  <header class="w-full flex justify-center sticky top-0 z-10 bg-slate-900">
+    <nav class="w-[95%] md:w-[90%] flex flex-col md:flex-row md:justify-between text-white  py-3 md:py-5">
+      <div class="flex w-full md:w-fit justify-between  ">
+        <a class="font-bold text-[1.3rem] md:text-2xl text-yellow-400 italic" href="#">AMIT</a>
+        <div class="md:hidden select-none rounded-md border-[1px] cursor-pointer border-slate-700 px-[8px]"
+          id="menu-button">
+          <a class="font-semibold text-[13px]">MENU</a>
+          <a class="font-semibold text-[18px]"> &#8801;</a>
+        </div>
+      </div>
+      <div class="hidden flex-col md:block py-8 md:py-0" id="menu-links">
+        <a href="#services" class="mx-3 py-2 font-normal tracking-widest hover:text-yellow-400">SERVICES</a>
+        <a href="#portfolio" class="mx-3 py-2 font-normal tracking-widest hover:text-yellow-400">PORTFOLIO</a>
+        <a href="#about" class="mx-3 py-2 font-normal tracking-widest hover:text-yellow-400">ABOUT</a>
+        <a href="#team" class="mx-3 py-2 font-normal tracking-widest hover:text-yellow-400">TEAM</a>
+        <a href="#contact" class="mx-3 py-2 font-normal tracking-widest hover:text-yellow-400">CONTACT</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <div class="bg-[url('../assets/img/header-bg.jpg')] bg-cover bg-center w-full h-[60vh] md:h-[75vh]  flex flex-col justify-center gap-y-3 md:gap-y-4 px-30">
+    <div class="w-full text-center">
+      <p class="text-white font-bold text-2xl md:text-4xl italic">
+        Welcome To Our Studio!
+      </p>
+    </div>
+    <div class="w-full text-center">
+      <p class="text-white font-bold text-4xl md:text-7xl">
+        IT'S NICE TO MEET YOU
+      </p>
+    </div>
+    <div class="w-full text-center">
+      <button type="submit"
+        class="text-1xl text-white cursor-pointer bg-yellow-400 hover:bg-yellow-500 rounded-md font-semibold md:font-bold py-3 px-7 mt-6 md:py-5 md:px-10 md:mt-6">
+        <a href="#services">TELL ME MORE</a>
+      </button>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div id="services" class="w-full h-auto flex flex-col justify-center gap-y-7 pt-[4rem]">
+    <div class="w-full text-center flex flex-col justify-center h-[30%] gap-y-4">
+      <p class="text-white text-3xl md:text-5xl font-bold">
+        SERVICES
+      </p>
+      <p class="text-gray-500 md:text-1xl font-normal">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </div>
+    <div class="flex justify-center w-full">
+      <div class="text-center flex flex-col justify-center w-[90%] sm:w-[70%] md:w-full md:flex-row md:justify-evenly">
+        <div class="md:w-[27%] p-6 flex flex-col justify-center align-middle gap-6 md:gap-4">
+          <div class="flex justify-center align-middle w-full">
+            <i
+              class="fa-solid fa-cart-shopping text-white text-bold text-7xl grid bg-yellow-400 rounded-full h-[150px] w-[150px] place-content-center"></i>
+          </div>
+          <p class="text-white text-3xl font-bold tracking-normal">
+            E-Commerce
+          </p>
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Minima maxime quam architecto quo inventore
+            harum ex magni, dicta impedit.
+          </p>
+        </div>
+        <div class="md:w-[27%] p-6 flex flex-col justify-center align-middle gap-4">
+          <div class="flex justify-center align-middle w-full">
+            <i
+              class="fa-solid fa-laptop text-white text-bold text-7xl grid bg-yellow-400 rounded-full h-[150px] w-[150px] place-content-center"></i>
+          </div>
+          <p class="text-white text-3xl font-bold tracking-normal">
+            Responsive Design
+          </p>
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Minima maxime quam architecto quo inventore
+            harum ex magni, dicta impedit.
+          </p>
+        </div>
+        <div class="md:w-[27%] p-6 flex flex-col justify-center align-middle gap-4">
+          <div class="flex justify-center align-middle w-full">
+            <i
+              class="fa-solid fa-lock text-white text-bold text-7xl grid bg-yellow-400 rounded-full h-[150px] w-[150px] place-content-center"></i>
+          </div>
+          <p class="text-white text-3xl font-bold tracking-normal">
+            Web Security
+          </p>
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Minima maxime quam architecto quo inventore
+            harum ex magni, dicta impedit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div id="portfolio" class="bg-slate-800 w-full h-auto pt-20 pb-10 flex flex-col justify-center align-middle gap-y-10 md:gap-y-[4rem]">
+    <div class="w-full text-center flex flex-col justify-center gap-y-4">
+      <p class="text-white text-2xl sm:text-3xl md:text-5xl font-bold">
+        PORTFOLIO
+      </p>
+      <p class="text-gray-500 md:text-1xl font-normal">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </div>
+    <div class="w-full grid sm:grid-cols-2 gap-8 gap-y-[4rem] px-10 md:grid-cols-3">
+      <div class="h-auto flex flex-col justify-center align-middle text-center gap-6">
+        <img src="../assets/img/portfolio/1.jpg" alt="" />
+        <div>
+          <p class="text-white text-3xl font-bold mb-2">
+            Threads
+          </p>
+          <p class="text-gray-400">Illustration</p>
+        </div>
+      </div>
+      <div class="h-auto flex flex-col justify-center align-middle text-center gap-6">
+        <img src="../assets/img/portfolio/2.jpg" alt="" />
+        <div>
+          <p class="text-white text-3xl font-bold mb-2">
+            Explore
+          </p>
+          <p class="text-gray-400">Graphic Design</p>
+        </div>
+      </div>
+      <div class="h-auto flex flex-col justify-center align-middle text-center gap-6">
+        <img src="../assets/img/portfolio/3.jpg" alt="" />
+        <div>
+          <p class="text-white text-3xl font-bold mb-2">Finish</p>
+          <p class="text-gray-400">Identity</p>
+        </div>
+      </div>
+      <div class="h-auto flex flex-col justify-center align-middle text-center gap-6">
+        <img src="../assets/img/portfolio/4.jpg" alt="" />
+        <div>
+          <p class="text-white text-3xl font-bold mb-2">Lines</p>
+          <p class="text-gray-400">Branding</p>
+        </div>
+      </div>
+      <div class="h-auto flex flex-col justify-center align-middle text-center gap-6">
+        <img src="../assets/img/portfolio/5.jpg" alt="" />
+        <div>
+          <p class="text-white text-3xl font-bold mb-2">
+            Southwest
+          </p>
+          <p class="text-gray-400">Website Design</p>
+        </div>
+      </div>
+      <div class="h-auto flex flex-col justify-center align-middle text-center gap-6">
+        <img src="../assets/img/portfolio/6.jpg" alt="" />
+        <div>
+          <p class="text-white text-3xl font-bold mb-2">Window</p>
+          <p class="text-gray-400">Photography</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" class="hidden lg:flex timeline max-w-[1200px] h-[500px] md:h-auto relative flex-col justify-center pt-20 text-white gap-y-[5rem]">
+    <div class="w-full text-center flex flex-col justify-center gap-y-4">
+      <p class="text-white text-2xl sm:text-3xl md:text-5xl font-bold">
+        ABOUT US
+      </p>
+      <p class="text-gray-500 md:text-1xl font-normal">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </div>
+    <div class="py-[10px] px-[50px] relative w-[50%] left-0">
+      <img class="absolute w-[150px] rounded-full right-[-80px] z-0" src="../assets/img/about/1.jpg">
+      <div class=" px-[70px]  relative rounded-md text-[15px] text-right ">
+        <h2 class="text-2xl font-bold ">2009 - 2011</h2>
+        <h2 class="text-2xl font-bold mb-3">Our Humble Beginnings</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+          temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+      </div>
+    </div>
+
+    <div class="py-[10px] px-[50px] relative w-[50%] left-[50%] ">
+      <img class="absolute w-[150px] rounded-full  left-[-70px] z-0" src="../assets/img/about/2.jpg">
+      <div class=" px-[70px] relative rounded-md text-[15px] text-left ">
+        <h2 class="text-2xl font-bold ">March 2011</h2>
+        <h2 class="text-2xl font-bold mb-3">An Agency is Born</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+          temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+      </div>
+    </div>
+
+    <div class="py-[10px] px-[50px] relative w-[50%] left-0">
+      <img class="absolute w-[150px] rounded-full right-[-80px] z-0" src="../assets/img/about/3.jpg">
+      <div class=" px-[70px]  relative rounded-md text-[15px] text-right ">
+        <h2 class="text-2xl font-bold ">December 2015</h2>
+        <h2 class="text-2xl font-bold mb-3">Transition to Full Service</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+          temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+      </div>
+    </div>
+
+    <div class="py-[10px] px-[50px] relative w-[50%] left-[50%]">
+      <img class="absolute w-[150px] rounded-full left-[-70px] z-0" src="../assets/img/about/4.jpg">
+      <div class=" px-[70px] relative rounded-md text-[15px] text-left ">
+        <h2 class="text-2xl font-bold ">July 2020</h2>
+        <h2 class="text-2xl font-bold mb-3">Phase Two Expansion</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis
+          temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TEAM -->
+  <div id="team" class="bg-slate-900 lg:bg-slate-800 w-full h-auto pt-20 pb-10 flex flex-col justify-center align-middle gap-y-14 md:gap-y-[4rem]">
+    <div class="w-full text-center flex flex-col justify-center gap-y-4">
+      <p class="text-white text-2xl sm:text-3xl md:text-5xl font-bold">
+        OUR AMAZING TEAM
+      </p>
+      <p class="text-gray-500 md:text-1xl font-normal">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-evenly align-middle text-center gap-y-[5rem]">
+      <div class="flex flex-col gap-y-7">
+        <div class="flex justify-center">
+          <img class="h-[12rem] sm:h-[15rem] w-[12rem] sm:w-[15rem] rounded-full border-8 border-gray-400"
+            src="../assets/img/team/1.jpg" alt="" />
+        </div>
+        <div class="text-white flex flex-col justify-center">
+          <p class="text-2xl font-bold tracking-wider">
+            Parveen Anand
+          </p>
+          <p class="text-gray-500 font-semibold">Lead Designer</p>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-[50%] md:w-[90%] flex justify-evenly">
+            <i
+              class="fa-brands fa-x-twitter text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+            <i
+              class="fa-brands fa-github text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+            <i
+              class="fa-brands fa-linkedin-in text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-y-7">
+        <div class="flex justify-center">
+          <img class="h-[12rem] sm:h-[15rem] w-[12rem] sm:w-[15rem] rounded-full border-8 border-gray-400"
+            src="../assets/img/team/2.jpg" alt="" />
+        </div>
+        <div class="text-white flex flex-col justify-center">
+          <p class="text-2xl font-bold tracking-wider">
+            Parveen Anand
+          </p>
+          <p class="text-gray-500 font-semibold">Lead Designer</p>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-[50%] md:w-[90%] flex justify-evenly">
+            <i
+              class="fa-brands fa-x-twitter text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+            <i
+              class="fa-brands fa-github text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+            <i
+              class="fa-brands fa-linkedin-in text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-y-7">
+        <div class="flex justify-center">
+          <img class="h-[12rem] sm:h-[15rem] w-[12rem] sm:w-[15rem] rounded-full border-8 border-gray-400"
+            src="../assets/img/team/3.jpg" alt="" />
+        </div>
+        <div class="text-white flex flex-col justify-center">
+          <p class="text-2xl font-bold tracking-wider">
+            Parveen Anand
+          </p>
+          <p class="text-gray-500 font-semibold">Lead Designer</p>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-[50%] md:w-[90%] flex justify-evenly">
+            <i
+              class="fa-brands fa-x-twitter text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+            <i
+              class="fa-brands fa-github text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+            <i
+              class="fa-brands fa-linkedin-in text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center text-slate-200 text-center">
+      <p class="w-[90%] md:w-[60%]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam
+        veritatis, quos
+        non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+    </div>
+  </div>
+
+  <!-- LOGOS -->
+  <div class="bg-slate-800 lg:bg-slate-900 w-full flex flex-col sm:flex-row md:flex-row justify-center h-[200px] gap-10 opacity-15">
+    <div class="md:w-[50%] flex justify-around">
+      <img class="w-[30%] md:w-[20%]" src="../assets/img/logos/microsoft.svg" alt="">
+      <img class="w-[30%] md:w-[20%]" src="../assets/img/logos/google.svg" alt="">
+    </div>
+    <div class="md:w-[50%] flex justify-around">
+      <img class="w-[30%] md:w-[20%]" src="../assets/img/logos/facebook.svg" alt="">
+      <img class="w-[20%] md:w-[20%]" src="../assets/img/logos/ibm.svg" alt="">
+    </div>
+
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" class="bg-[url('../assets/img/map-image.png')] bg-cover bg-center w-full h-auto pt-20 pb-10 flex flex-col justify-center align-middle gap-y-10 md:gap-y-[4rem]">
+    <div class="w-full text-center flex flex-col justify-center gap-y-4">
+      <p class="text-white text-2xl sm:text-3xl md:text-5xl font-bold">
+        CONTACT US
+      </p>
+      <p class="text-gray-500 md:text-1xl font-normal">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+    </div>
+    <div>
+      <form action="#" method="post" novalidate
+        class="needs-validation w-full flex justify-center flex-col px-[5%] sm:px-[2rem] md:px-[5rem] gap-y-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 place-content-center gap-10">
+          <div class="flex flex-col gap-y-5">
+            <div>
+              <input type="text" class="name w-full rounded-md px-3 py-3 font-semibold" placeholder="Your Name*"
+                required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Name is Required
+              </div>
+            </div>
+
+            <div>
+              <input type="email" class="email w-full rounded-md px-3 py-3 font-semibold" placeholder="Your Email*"
+                required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Email I'd is Required
+              </div>
+            </div>
+
+            <div>
+              <input type="phone" class="phone w-full rounded-md px-3 py-3 font-semibold" placeholder="Your Phone*"
+                required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Phone Number is Required
+              </div>
+            </div>
+
+          </div>
+          <div>
+            <textarea class="w-full rounded-md px-3 py-3 font-semibold" name="message" id="" cols="30" rows="8"
+              placeholder="Your Message*" required></textarea>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Message is Required
+            </div>
+
+          </div>
+        </div>
+        <div class="w-full flex justify-center">
+          <button
+            class="text-white bg-yellow-400 px-7 sm:px-12 py-3 rounded-md font-semibold cursor-pointer hover:bg-yellow-500">SEND
+            MESSAGE</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="flex flex-col md:flex-row justify-between h-auto py-4 items-center px-[2rem] gap-y-3 text-white bg-slate-400">
+    <div class="w-full  md:w-[30%] grid place-content-center">
+      <p>Copyright © devamit.com 2023</p>
+    </div>
+    <div class="w-full md:w-[40%] flex justify-center">
+      <div class="w-full md:w-[90%] flex justify-center gap-x-4">
+        <a href="#"><i
+            class="fa-brands fa-x-twitter text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i></a>
+        <a href="https://github.com/AmitKrVr"><i
+            class="fa-brands fa-github text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i></a>
+        <a href="#"><i
+            class="fa-brands fa-linkedin-in text-black bg-white hover:bg-slate-200 font-bold text-[1.4rem] rounded-full h-10 w-10 grid place-content-center cursor-pointer"></i></a>
+      </div>
+    </div>
+    <div class="w-full md:w-[30%] flex justify-center gap-x-5">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="../src/app.js"></script>
+
+</body>
+
+</html>
